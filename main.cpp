@@ -1,6 +1,7 @@
 #include<cmath>
 #include<windows.h>
 #include<GL/freeglut.h>
+#include<stdlib.h>
 
 
 float x = 90.0, y = 0.0, z = 0.0;
@@ -367,6 +368,7 @@ void queento(int key, int x, int y) {
                 //   GLint slices, GLint stacks);
 int main(int argc, char** argv)
 {
+
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
     glutInitWindowSize(800, 700);
@@ -384,6 +386,9 @@ int main(int argc, char** argv)
 
     glClearColor(221.0/255.0, 36.0/255.0, 227.0/255.0,1);
     theme();
-   // PlaySound(TEXT(action.wav), NULL, SND_FILENAME | SND_ASYNC);
+   //PlaySound(TEXT(C:\Users\Zeyad Ramadan\Desktop\22go2od\MASTER\Action.wav), NULL, SND_FILENAME | SND_ASYNC);
+    PlaySound("C:\\Users\\Zeyad Ramadan\\Desktop\\22go2od\\zeyadramadan20102876\\1.wav",SND_ASYNC);
+
     glutMainLoop();
+    return 0;
 }
